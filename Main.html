@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="quiz.js"></script>
+    <link rel="icon" type="image/x-icon" href="examples/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>HTML CSS</title>
+</head>
+<body>
+  <div class="logo-section">
+    <div>
+      <img class="icons" src="https://cdn-icons-png.flaticon.com/512/1051/1051328.png" alt="html">
+      <img class="icons" src="https://cdn-icons-png.flaticon.com/512/82/82127.png" alt="css">
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="header-container">
+      <div class="header">
+        HTML CSS <span style="font-weight: 300;">Kursus</span>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: lightblue;"></div>
+        <h1>Sissejuhatus</h1>
+        <p class="content">
+          <strong>HTML</strong>-i (HyperText Markup Language) kasutatakse veebilehtede kujundamiseks, kasutades märgistuskeelt. 
+          HTML on hüperteksti ja märgistuskeele kombinatsioon.
+          Märgistuskeelt kasutatakse tekstidokumendi määratlemiseks märgendis, mis määratleb veebilehtede struktuuri. 
+          Seda keelt kasutatakse teksti märkimiseks (arvuti jaoks märkmete tegemiseks), et masin saaks sellest aru. 
+          Enamik märgistuskeeli (nagu HTML) on inimloetavad. Keel kasutab silte, et määratleda, milliseid manipuleerimisi tekstiga tuleb teha.
+        </p>
+        <p class="content">
+          <strong>CSS</strong>-i (Cascading Style Sheets) kasutatakse stiilide rakendamiseks veebilehtedele. 
+          Seda kasutatakse veebilehtede esinduslikuks muutmiseks. 
+          CSS stylesheet-id võimaldavad veebilehtedel stiile rakendada. 
+          See võimaldab teha iga veebilehe kujundust HTML-ist sõltumatult.
+          Stiil on iga veebisaidi oluline omadus. 
+          See suurendab veebisaidi standardeid ja üldist välimust, mis muudab kasutajal sellega suhtlemise lihtsamaks.<br><br>
+          Kursuse läbimiseks on soovitatav luua endale VS Code programmis HTML ja CSSi kirjutamiseks mugav keskkond(hõlbustavad extensionid). Abiks on alltoodud video.<br><br>
+          <iframe width="854" height="480" noborder="0" src="https://www.youtube.com/embed/4NfFFsQC77M">
+          </iframe>
+          <span style="color: rgb(170, 175, 177);">source: https://www.youtube.com/v/4NfFFsQC77M</span>
+        </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(240, 101, 41);"></div>
+        <h1>Inspect element veebilehtedel</h1>
+        <p class="content">
+          Inspect element võimaldab ajutiselt redigeerida veebisaidi koodi visuaalset osa.
+          Elementide kontrollimise teel koodis tehtud muudatused ei ole püsivad ja kustutatakse veebilehe uuesti avamisel (arvestab ka lehe värskendamist).
+          Meie puhul on see kõige kasulikum selleks, et näha, kuidas koodis tehtavad muudatused lõpptulemust mõjutavad.
+          Tavaliselt avatakse see kas vajutades klaviatuuril klahvi F12 või klõpsates hiire paremat nuppu ja valides avanevas kontekstimenüüs “Inspect element”.
+        </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(240, 101, 41);"></div>
+        <h1>HTML Meta tags</h1>
+        <p class="content">
+          <highlight>&#60;<el>head</el>&#62;</highlight> element on metaandmete konteiner ning see on HTML failis üks esimestest elementidest, peale <highlight>&#60;<el>!DOCTYPE html</el>&#62;</highlight> ja <highlight>&#60;<el>html</el>&#62;</highlight> tag-i. 
+          Head elemendis manustatakse peamiselt  	<highlight>&#60;<el>meta</el>&#62;</highlight>,  	<highlight>&#60;<el>link</el>&#62;</highlight> ja <highlight>&#60;<el>title</el>&#62;</highlight> infot. 
+          Lisaks on võimalik <highlight>&#60;<el>head</el>&#62;</highlight> elemendis määrata oma veebilehele favicon, mis on akna nime juures olev ikoon/logo. 
+          See teeb mitme akna lahtioleku puhul selgeks, millisel lehel sa teatud aknal oled.
+        </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(240, 101, 41);"></div>
+        <h1>Teksti formaatimine</h1>
+        <p class="content">
+          HTML sisaldab mitmeid elemente erilise tähendusega teksti määratlemiseks. Selliseid elemente on lihtne rakendada teksti peal.
+          <br><br><strong>Bold</strong><br>
+          <highlight>&#60;<el>b</el>&#62;</highlight> ja <highlight>&#60;<el>strong</el>&#62;</highlight> elemendid muudavad teksti Bold formaati. <highlight>&#60;<el>strong</el>&#62;</highlight> elementi kasutatakse, et märgistada tähtsat tekstiosa. 
+          <br><br><strong><i>Italic</i></strong><br>
+          <highlight>&#60;<el>i</el>&#62;</highlight> ja <highlight>&#60;<el>em</el>&#62;</highlight> elemendid muudavad teksti Italic formaati. <highlight>&#60;<el>em</el>&#62;</highlight> elementi kasutatakse, et märgistada rõhutatud teksti.
+          <br><br><strong><sub>Subscript</sub> / <sup>Superscript</sup></strong><br>
+          <highlight>&#60;<el>sub</el>&#62;</highlight> ja <highlight>&#60;<el>sup</el>&#62;</highlight> ehk subscript ja superscript on elemendid, mille puhul tekst kuvatakse pool tähemärki tavalisest reast allpool. Selliste elementide abil on võimalik kujutada keemilisi valemeid või footnote-e.
+          <br><br><strong>Paragraph</strong><br>
+          <highlight>&#60;<el>p</el>&#62;</highlight> ehk paragraaf kujutab tekstisisu, mis on isiklikul tekstireal. Selle elementidega on mõtekas sisustada suuremaid tekstilõike.
+          <br><br><strong><span style="color: rgb(255, 98, 221);">Sp</span>an</strong><br>
+          <highlight>&#60;<el>span</el>&#62;</highlight> on teksti sisene konteiner, mida kasutatakse teksti märgistamiseks. Span võimaldab näiteks muuta teksti sees oleva sõna stiili, et see ei mõjutaks ümberolevat teksti kujutust.
+          <br><br><strong>Lists</strong><br>
+          <highlight>&#60;<el>ul</el>&#62;</highlight> ja <highlight>&#60;<el>o</el>&#62;</highlight> elemendid võimaldavad luua liste. <highlight>&#60;<el>ul</el>&#62;</highlight> on järjestamata list, ehk on kujutatud punktidena või mingi ühtse märgiga. <highlight>&#60;<el>ol</el>&#62;</highlight> on järjestatud list, kus iga listi element on nummerdatud.
+          Antud listide sisse elementide lisamine on võimalik <highlight>&#60;<el>li</el>&#62;</highlight><highlight>&#60;<el>/li</el>&#62;</highlight> abil.
+        </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(240, 101, 41);"></div>
+        <h1>HTML atribuudid</h1>
+        <p class="content">
+          HTML atribuudid pakuvad lisainfot elementidele. Sellised atribuudid võimaldavad manustada linke, lisainfot ja CSS stiilikoodi. Viimase puhul oleks aga soovitatav kasutada CSS faile ning linkida need HTML failiga, et hoida projekt puhtama ning selgemini arusaadavana.
+          Kõige laiemini kasutatavad HTML atribuudid:<br><br>
+          <strong>href</strong> atribuut on üldiselt kasulik hüperlingi elemendi sees. href atribuut määrab üldiselt kuhu element kasutaja suunab. Href on äärmiselt kasulik HTML failis CSS failide linkimisega.
+          <br><highlight>&#60;a <el>href="https://next.junni.co.jp/">Junni_is<</el>/a&#62;</highlight><br><br>
+          <strong>src</strong> atribuut viitab elemendi allikale. Sellega on võimalik sisestada oma lehele pilte, videosid ja muid sisufaile. Src võib viidata otse veebilehesisesele manusele või veebilehevälisele manusele, milleks võivad olla pildid, mis on välistel veebilehtedel olemas. Kindlam on src puhul viidata sisule, mis on veebilehe enda failides manustatud.
+          <br><highlight>&#60;<el>img src="ago.jpg"</el>&#62;</highlight><br><br>
+          <strong>alt</strong> atribuuti on mõtekas kasutada lisana src atribuudile. alt kuvab sisu puudumise puhul tekstilõiku, mis võib kirjeldada üldiselt src sisu.
+          <br><highlight>&#60;<el>img src="ago.jpg" alt="ago pilt"</el>&#62;</highlight><br><br>
+          <strong>Lang</strong> atribuut määrab keele, milles leht kuvatud on. See on mõeldud otsingumootorite ja brauserite abistamiseks.
+          <br><highlight>&#60;<el>html lang="en"</el>&#62;</highlight><br><br>
+          <strong>title</strong> atribuut on kõige kergem viis lisada elemendile lisainfot. Kui sa kuvad infot oma kursoriga siis title abil on võimalik kuvada lisainfot, et abistada kasutajat ning edastada infot ilma veebilehe üldist ehitust muutmata. Need infotükid on üsna lühikesed ning ei ole väga sisukad, aga siiski kasulikud meeldivama kasutajakogemuse loomiseks.
+          NB! Mitte segamini ajada <title></title> elemendiga, mis määrab veebilehe nime, mida kuvatakse veebilehe aknal.
+          <br><highlight>&#60;<el>p title="8+8">16&#60;/p</el>&#62;</highlight><br><br>
+          <strong>style</strong> atribuut võimaldab kirjutada CSS koodi HTML sees. See on mugav väikeste elementide puhul, millel pole palju stiiliparameetreid. Muul juhul on mõistlikum eraldada HTML ja CSS failid, et oleks kergem veebilehe struktuurist aru saada ning muutusi läbi viia.
+          <br><highlight>&#60;<el>p style="color: aliceblue;">Blue innit&#60;/p</el>&#62;</highlight><br><br>
+          <strong>File path</strong> kirjeldab faili asukohta veebisaidi kaustastruktuuris. Kui veebilehe kaustas on olemas images folder, kus on manustatud kõik veebilehe pildid, siis on võimalik sellele viidata src sees järgnevalt:<br>
+          <highlight>&#60;<el>img src="images/picture.jpg"</el>&#62;</highlight>
+        </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(120, 25, 158);"></div>
+        <h1>Quiz</h1>
+        <div class="content">
+          <header>
+            <p>Pane oma teadmised proovile <strong>HTML/CSS teemal</strong></p>
+          </header>
+          <section>
+            <div id="results"></div>
+            <form name="quizForm" onsubmit="return submitAnswers1()">
+              <h3>1. Mida tähendab CSS?</h3>
+              <input type="radio" name="q1" value="a" id="q1a"> Colorful Style Sheets<br>
+              <input type="radio" name="q1" value="b" id="q1b"> Computer Style Sheets<br>
+              <input type="radio" name="q1" value="c" id="q1c"> Cascading Style Sheets<br>
+              <input type="radio" name="q1" value="d" id="q1d"> Creative Style Sheets<br>
+        
+              <br>
+              <h3>2. Millist HTML-i märgendit kasutatakse sisemise stiililehe määratlemiseks (internal style sheet)?</h3>
+              <input type="radio" name="q2" value="a" id="q2a"> css<br>
+              <input type="radio" name="q2" value="b" id="q2b"> style<br>
+              <input type="radio" name="q2" value="c" id="q2c"> text/style<br>
+              <input type="radio" name="q2" value="d" id="q2d"> script<br>
+              
+              <br>
+              <h3>3. Kus on kasutusel järgmised atribuudid:  text, list, box, margin, border, color?</h3>
+              <input type="radio" name="q3" value="a" id="q3a"> css<br>
+              <input type="radio" name="q3" value="b" id="q3b"> ajax<br>
+              <input type="radio" name="q3" value="c" id="q3c"> php<br>
+              <input type="radio" name="q3" value="d" id="q3d"> html<br>
+              
+              <br>
+              <h3>4. Millise elemendiga saab teksti kuvada pool tähemärki tavalisest reast allpool?</h3>
+              <input type="radio" name="q4" value="a" id="q4a"> &#60;sub><br>
+              <input type="radio" name="q4" value="b" id="q4b"> &#60;em><br>
+              <input type="radio" name="q4" value="c" id="q4c"> &#60;alt><br>
+              <input type="radio" name="q4" value="d" id="q4d"> &#60;sup><br>
+
+              <br>
+              <input type="submit" value="Kinnita vastused">
+            </form>
+          </section>
+        </div>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(41, 101, 241);"></div>
+        <h1>CSS mõõtühikud</h1>
+        <p class="content">
+          CSS-i mõõtühikud jagunevad peamiselt kahte kategooriasse:<br><br>
+          <strong>Absoluutsed mõõtühikud</strong> on ühikud, mis on fikseeritud ning kindla kujutamissuurusega. 
+          Sellised mõõtühikud on kasulikud kindla meediumi jaoks, näiteks printimise formaadi loomiseks. 
+          Selliseid mõõtühikud on üsna mugavad algelistele lehtedele, millel pole vaja end kohendada mitmete meediumite jaoks.<br><br>
+          <strong>cm</strong> - centimeter<br><br>
+          <strong>mm</strong> - millimeter<br><br>
+          <strong>in</strong> - inch<br><br>
+          <strong>px</strong> - pixel<br><br>
+          <strong>Relatiivsed mõõtühikud</strong> on ühikud, mis on relatiivsed suhtes oma ümbrusega. Sellised mõõtühikud on võimelised automaatselt elemendi suurust muutma ning kohendama erinevate lehe suuruste jaoks, et element oleks alati relatiivselt samas kohas. Seetõttu on need üsna laialdaselt kasutuses efektiivses veebidisainis, mis võimaldab lehel sobitada end erinevatele meediumitüüpidele paremini kui absoluutsed mõõtühikud.<br><br>
+          <strong>em, rem</strong> - ühikud, mis on suhtes elemendi font suurustega. Ühikud on praktilised skaleeritava veebilehe loomisel.<br><br>
+          <strong>vw, vh</strong> - ühikud, mis on protsentuaalselt suhtes viewporti suurusega.<br><br>
+          <strong>%</strong> - ühik, millega saab määrata elemendi suurust container-i sees.<br><br>
+          </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(240, 101, 41);"></div>
+        <h1>Responsive veebikujundus</h1>
+        <p class="content">
+          Responsive ehk kohanduv veebileht on leht, mis kohendab lehe kujutust vastavalt meediumile. Sellised lehed kohanduvad automaatselt ning on sobilikud erinevate ekraani suuruste ja vaateavade jaoks. Kohanduva veebilehe loomiseks on mitmeid tasandeid. Peamine <meta> tag, mis on aluseks kohanduvale veebilehele, on vaateava põhjal võetud mõõtmed. See tag seab veebilehe sisu vastavusse vaateava suurusega, täpsemalt laiusega. 
+          <br><highlight>&#60;<el>meta name="viewport" content="width=device-width, initial-scale=1.0"</el>&#62;</highlight><br><br>
+          Lisaks <highlight>&#60;<el>meta</el>&#62;</highlight> tag-idele tuleb kasuks kohanduvate lehtede puhul relatiivsed mõõtühikud, mida on arutatud juba eelnevates teemades. Antud mõõtühikud on relatiivsed meediumi parameetritele. <br>Näiteks on veebilehel konteiner, mille laiuseks on terve vaateava laius. Selle sees võib olla sektsioon, mille laiuseks on määratud <highlight><el>width: 50%;</el></highlight><br>
+          Kui veebileht on relatiivne vaateava laiusega, siis lehe vaateava muutes, muutub ka loodud sektsiooni suurus. Antud sektsioon on alati pool vaateava laiusest. 
+          <br><br>Lisaks width parameetrile oleks mõistlik ka lisada näiteks min-width: / max-width: et antud elemendid ei muutuks liiga väikseks või suureks spetsiifilistes olukordades.
+          <br><highlight>&#60;<el>img src="img.jpg" style="max-width: 100%; height: auto;"</el>&#62;</highlight><br><br>
+          Kohanduva teksti loomisel tuleb kasuks vw ja vh (viewport width ja viewport height). Need parameetrid sätivad teksti font-i suuruse selliseks, kus 1vw/vh on 1% vaateava laiusest/pikkusest. See tagab, et tekst oleks loetav ja sama suurusega igas olukorras. Veebilehe paragraafide ja tekstisisu puhul on siiski mõtekas määrata kindel suurus.
+          <br><highlight>&#60;<el>h1 style="font-size: 10vw">Hello World&#60;/h1</el>&#62;</highlight><br><br>
+          </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(240, 101, 41);"></div>
+        <h1>Piltide, videode manustamine</h1>
+        <p class="content">
+          Piltide, videote ja muu sellise sisu manustamine HTML faili on võimalik kahel kombel. Manustada sisu projekti otse, või viidata välisele allikale, kust sisu on võetud.
+          Kui vajalikud sisufailid on projekti folderis olemas, siis on võimalik luua konteiner sisu jaoks, lisada viide allikale, kust sa tahad videot või pilti võtta. 
+          Video puhul on võimalik lisada lisa atribüüte nagu controls, autoplay ja muted.
+          <img src="examples/Embedding.PNG" style="margin-bottom: 20px;">
+          Sisu on võimalik ka internetist enda lehele manustada, linkides sisu allikas oma projektiga.
+          <img src="examples/Embeddinglinks.PNG" style="margin-bottom: 20px;">
+          </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(240, 101, 41);"></div>
+        <h1>Linkimine</h1>
+        <p class="content">
+          Kindlasti oled varem olnud olukorras, kust ühelt veebisaidilt mingile teisele spetsiifilisele saidile saab vaid mõne klikiga. Näiteks tahes YouTube-i minna, tuleb klikkida järgnevat hüperlinki: www.youtube.com . Seda kõike võimaldab HTML-s kasutusel olev linkimine. <br><br>
+          Et luua HTML-s hüperlinki, tuleb kasutusele võtta ankruelement ehk anchor element. Ankruelemendi märgiseks on <a> ning seda kasutades ongi võimalik luua hüperlink, et liikuda ühelt dokumendilt teisele. Kas pole mugav?<br><br>
+          Ankruelemendi kasutus koodi kirjutamisel näeb aga välja selline: <br>
+          <a href="url">See tekst kuvatakse</a><br>
+          Atribuut href määrab ära täpse dokumendi aadressi, kuhu link viib. Näiteks tahes teha hüperlink jällegi YouTube-i, peaks tegutsema umbes järgnevalt: 
+          <br><highlight>&#60;<el>a href="https://www.youtube.com/">Mine YouTube!&#60;/a</el>&#62;</highlight><br><br>
+          ning tulemus veebilehel oleks järgnev:<br>
+          <a href="https://www.youtube.com/">Mine YouTube!</a><br><br>
+          Nii ankrut ning ka igasugust muud teksti saab HTML-s modifitseerida, kasutades selleks CSS-i. Teksti muutmiseks tuleb on olemas erinevaid võimalusi:<br>
+          Teksti suuruse muutmiseks oleme harjunud näiteks Word-s kasutama tööriistariba, kus on lihtne + ja - abil vastavalt kas teksti suurust suurendada või vähendada. Tehes enda veebilehte on võimalik teksti suurust seadistada kasutades järgnevat rida:<br><br>
+          <highlight><el>font-size: (number)px</el></highlight><br>     
+          (number) on teksti suurus, mida soovitakse saavutada.<br><br>
+          Fondi muutmiseks oleme samuti harjunud kasutama Word-s tööriistariba, aga enda veebilehte tehes on võimalik kasutada järgnevat rida:<br><br>
+          <highlight><el>font-family: (name)</el></highlight><br>
+          (name) on vastava fondi nimi, mida soovitakse kasutada.<br><br>
+          Fondi värvi muutmiseks on võimalik kasutada järgnevat rida:<br><br>
+          <highlight><el>color: (color)</el></highlight><br>
+          (color) on värv, milles soovitakse teksti näha.<br><br>
+          Fondi paksuse muutmiseks on võimalik kasutada järgnevat rida:<br><br>
+          <highlight><el>font-weight: (weight)</el></highlight><br>
+          (weight) võib olla nii number, kui ka sõna (nt: normal, bold, lighter), mis määrab, kui paks tekst on. <br>NB! font-weight kasutamise võimalused sõltuvad ka sellest, milline on font ise.<br><br>
+          Fondi stiili muutmiseks on võimalik kasutada järgnevat rida:<br><br>
+          <highlight><el>font-style: (style)</el></highlight><br>
+          (style) on vastava stiili nimi, mida soovitakse kasutada.<br><br>
+          Koodi näide koos kõigi ülaltoodud tööriistadega:<br>
+          <img src="examples/Linking.PNG" style="margin-bottom: 20px;">
+          Võimalusi teksti muutmiseks leidub veel palju.          
+          </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(120, 25, 158);"></div>
+        <h1>Quiz</h1>
+        <div class="content">
+          <header>
+            <p>Pane oma teadmised proovile <strong>HTML/CSS teemal</strong></p>
+          </header>
+          <section>
+            <div id="results2"></div>
+            <form name="quizForm2" onsubmit="return submitAnswers2()">
+              <h3>1. Milline CSS-i atribuut reguleerib teksti suurust?</h3>
+              <input type="radio" name="q1" value="a" id="q1a"> font-size<br>
+              <input type="radio" name="q1" value="b" id="q1b"> font-style<br>
+              <input type="radio" name="q1" value="c" id="q1c"> text-style<br>
+              <input type="radio" name="q1" value="d" id="q1d"> text-size<br>
+        
+              <br>
+              <h3>2. CSS-is on "em", "%" ja "in" ...</h3>
+              <input type="radio" name="q2" value="a" id="q2a"> Relatiivsed mõõtühikud<br>
+              <input type="radio" name="q2" value="b" id="q2b"> Absoluutsed mõõtühikud<br>
+              <input type="radio" name="q2" value="c" id="q2c"> "%"  ja "em" on absoluutsed ning "in" on relatiivne<br>
+              <input type="radio" name="q2" value="d" id="q2d"> "%"  ja "em" on relatiivsed ning "in" on absoluutne<br>
+              
+              <br>
+              <h3>3. Milline on korrektne CSS-i süntaks?</h3>
+              <input type="radio" name="q3" value="a" id="q3a"> {body;color:black;}<br>
+              <input type="radio" name="q3" value="b" id="q3b"> body:color=black;<br>
+              <input type="radio" name="q3" value="c" id="q3c"> {body:color=black;}<br>
+              <input type="radio" name="q3" value="d" id="q3d"> body {color:black;}<br>
+              
+              <br>
+              <h3>4. Kuidas sisestada kommentaar CSS-i faili?</h3>
+              <input type="radio" name="q4" value="a" id="q4a"> // see on kommentaar<br>
+              <input type="radio" name="q4" value="b" id="q4b"> // see on kommentaar //<br>
+              <input type="radio" name="q4" value="c" id="q4c"> ' see on kommentaar<br>
+              <input type="radio" name="q4" value="d" id="q4d"> /* see on kommentaar */<br>
+
+              <br>
+              <input type="submit" value="Kinnita vastused">
+            </form>
+          </section>
+        </div>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(41, 101, 241);"></div>
+        <h1>CSS Selector</h1>
+        <p class="content">
+          CSS-kood sisaldab endas mitu erinevat osa. 
+          Üks neist on valija ehk selector, mis aitab täpselt märgistada, millisele HTML- elemendile mingit stiili lisada tahame. 
+          Selectoreid on olemas mitme erineva tüübi näol:<br><br>
+          <strong>Element selector</strong> valib HTML-i elemendi selle nime järgi. Näide, kus kõik &#60;p&#62; elemendid lehel keskele joondatud ning punast värvi tehtud:<br><br>
+          <img src="examples/elementsel.PNG"><br><br>
+          <strong>ID selector</strong> ehk ID valija all antakse igale HTML-märgendile ID ja selle ID jaoks määratletakse stiil. Sama ID-d ei saa määrata mitmele HTML-sildile, mistõttu on ID selectori kasutamine efektiivne juhul, kui konkreetse HTML-i jaoks on vaja ainulaadset stiili. CSS-s määratletakse see # abil. Näide:<br><br>
+          <img src="examples/idsel.PNG"><br><br>
+          <strong>Class selector</strong> ehk klassi valija all määratletakse klass ära iga HTML-märgendi jaoks ning selle klassi jaoks määratletakse omakorda stiil. Mitmele HTML-sildile saab valida sama klassi ja seega saab CSS-i stiili uuesti kasutada, mis teeb inimesele asja väga lihtsaks. CSS-is määratletakse see punktiga (.). Näide:<br><br>
+          <img src="examples/classsel.PNG"><br><br>
+          <strong>Attribute selector</strong> ehk atribuudi valijat kasutatakse määratud atribuudiga elementide valimiseks. Määratud atribuut on kantsulgude [ ] vahel.<br><br>
+          <img src="examples/Attsel.PNG"><br><br>
+          <strong>Pseudo-class selector</strong> ehk pseudoklassi valijat kasutatakse elemendi erilise oleku määratlemiseks. Näiteks saab seda kasutada nii, et element on mingit kindlat stiili vaid siis, kui kasutaja on hiirekursoriga selle peal. Samuti annab see võimaluse külastatud ja mittekülastatud veebilingid erineva stiiliga kuvada jne. Näide koodist, mille järgi on nupp erinevat stiili juhul, kui selle peal kursoriga liikuda.<br><br>
+          <img src="examples/pseudosel.PNG"><br><br>
+          </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(41, 101, 241);"></div>
+        <h1>Padding ja Margin</h1>
+        <p class="content">
+          Padding ja margin on atribuudid, mis loovad ruumi elemendi sisu jaoks ja elemendi ümber.<br><br>
+          Padding atribuute kasutatakse ruumi loomiseks elemendi sisu ümber mis tahes määratletud piiride sees. 
+          Kui on kast, mille sees on teksti sisu, siis padding atribuudi loomine loob nö buhvri sisu ja elemendi vahele. 
+          See loob silmale meeldivama ning soliidsema struktuuri veebidisainis.<br><br>
+          <img src="examples/padding0.JPG" style="margin-bottom: 20px; margin-right: 24px;"> <img src="examples/padding1.JPG" style="margin-bottom: 20px;"><br>
+          Margin atribuute kasutatakse ruumi loomiseks elemendi väljapool. Margin loob ruumi kahe elemendi vahele, ehk on buhvriks elementide vahel. See on kasulik, et eraldada elemente omavahel ning omakorda elementide gruppe. 
+          <highlight><el>Margin: auto;</el></highlight> on kasulik, kui on vaja element konteineri keskele asetada.
+          </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(41, 101, 241);"></div>
+        <h1>CSS properties</h1>
+        <p class="content">
+          CSS-is on olemas veel palju atribuute, mille kaudu saab elemente muuta. Näiteks on olemas:<br><br>
+          <strong>Width</strong> ja <strong>height</strong> ehk laius ja kõrgus on ühed põhilised atribuudid, et määrata elemendi laiust ja kõrgust. Antud atribuudid aga ei sisalda paddingut, bordereid ega ka margineid. Need määravad elemendi täidises, äärises ja veerises oleva ala kõrguse/laiuse.<br><br>
+          <strong>Background</strong> ehk taust, background atribuudi alla käivad veel color, image, position, size, repeat, origin, clip ja attachment, millega tausta modifitseerida saab. <br><br>
+          <strong>Border</strong> ja border-radius ehk ääris ja äärise raadius. CSS-i äärise atribuudid võimaldavad määrata elemendi äärise laiuse, stiili ja värvi, border-radius atribuut määrab elemendi nurkade raadiuse (võimaldab lisada elementidele ümaraid nurki).<br><br>
+          <strong>Opacity</strong> ehk läbipaistmatuse atribuut määrab elemendi läbipaistmatuse taseme. Tase kirjeldab läbipaistvuse taset, kus 1 ei ole üldse läbipaistev, 0,5 on 50% läbipaistev ja 0 on täiesti läbipaistev.<br><br>
+          <strong>Z-index</strong> ehk z-indeks määrab elemendi virna järjekorra, z-index töötab ainult paigutatud elementide puhul. Suurema indeksiga element on teise peal.<br><br>
+          <img src="examples/CSSProperties.PNG">
+          </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(41, 101, 241);"></div>
+        <h1>Element alignment</h1>
+        <p class="content">
+          <strong>Text-align</strong> ehk teksti joondamise atribuuti kasutatakse teksti horisontaalse joonduse määramiseks. 
+          Tekst võib olla vasakule, paremale või keskele joondatud. 
+          Järgnev näide näitab keskele ning vasakule ja paremale joondatud teksti (vasakjoondus on vaikimisi, kui teksti suund on vasakult paremale):<br><br>
+          <img src="examples/text-align.PNG" style="margin-bottom: 20px;">
+          <strong>CSS-grid</strong> või <strong>CSS-grid layout</strong> pakub ridade ja veergudega ruudustikupõhist paigutussüsteemi, mis muudab veebilehtede kujundamise lihtsamaks. 
+          Grid layout koosneb põhielemendist koos ühe või mitme alamelemendiga. Näide koodist:<br><br>
+          <img src="examples/grid.PNG" style="margin-bottom: 20px;">
+          CSS-is on palju atribuute, millega mõnda ruudustikku kujundada (column-gap, row-gap, grid-area, grid-column, grid-gap, grid-template jne).<br><br>
+          <strong>CSS Flexbox</strong> (Flexible Box) on sarnane CSS-gridiga.<br><br>
+          Kõige olulisem erinevus kahe paigutusmooduli vahel on see, et CSS Flexbox on ühemõõtmeline paigutusmudel, samas kui CSS Grid on kahemõõtmeline. 
+          Ühemõõtmelisena tähendab see, et Flexboxi konteiner saab hõlbustada asjade paigutamist kas ritta või veergu. 
+          CSS-grid seevastu võib hõlbustada üksuste korraga risti ja alla paigutamist, mis tähendab, et saate töötada mööda kahte telge, vertikaalselt ja horisontaalselt, mida CSS Flexbox teha ei saa.<br><br>
+          Flexbox teeb arvutused igas reas ükshaaval, arvestamata teiste ridadega, ja nii saab reguleerida igas reas joondust. CSS Grid seevastu annab teile paigutuse juhtelemendid, mis töötavad ideaalselt kahes suunas.<br><br>
+          Flexbox on põhimõtteliselt sisupõhine. See vaatab sisu ja kohaneb sellega. Grid toimib rohkem paigutuse tasemel ja on konteineripõhine, ehk dikteerib struktuuri.<br><br>
+          <img src="examples/grid_vs_flexbox.png" style="width: 1000px;">
+          <span style="color: rgb(170, 175, 177);">source: https://f36.contentful.com/components/grid</span><br><br>
+          CSS grid ja flexboxi kinnistamiseks soovitame teha läbi bite-size levelitega mängud(45min):<br><br>
+          <a href="https://flexboxfroggy.com/" target="_blank"><img src="examples/Gridgarden.PNG" style="width: 420px; border: 3px solid darkgreen;"></a><br><br>
+          <a href="https://cssgridgarden.com/" target="_blank"><img src="examples/flexboxfroggy.PNG" style="width: 420px; border: 3px solid darkgreen;"></a>
+        </p>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(120, 25, 158);"></div>
+        <h1>Quiz</h1>
+        <div class="content">
+          <header>
+            <p>Pane oma teadmised proovile <strong>HTML/CSS teemal</strong></p>
+          </header>
+          <section>
+            <div id="results3"></div>
+            <form name="quizForm3" onsubmit="return submitAnswers3()">
+              <h3>1. Milleks on kasutusel CSS padding atribuut?</h3>
+              <input type="radio" name="q1" value="a" id="q1a"> Ruumi loomiseks<br>
+              <input type="radio" name="q1" value="b" id="q1b"> Taustavärvi valimiseks<br>
+              <input type="radio" name="q1" value="c" id="q1c"> Äärise tegemiseks<br>
+              <input type="radio" name="q1" value="d" id="q1d"> Fondi valimiseks<br>
+        
+              <br>
+              <h3>2. Kuidas muuta elemendi vasakut veerist?</h3>
+              <input type="radio" name="q2" value="a" id="q2a"> left-margin:<br>
+              <input type="radio" name="q2" value="b" id="q2b"> margin:<br>
+              <input type="radio" name="q2" value="c" id="q2c"> margin-left:<br>
+              <input type="radio" name="q2" value="d" id="q2d"> text-indent:<br>
+              
+              <br>
+              <h3>3. Õige või vale? "css" atribuut võimaldab kirjutada CSS koodi HTML-i sees.</h3>
+              <input type="radio" name="q3" value="a" id="q3a"> Õige<br>
+              <input type="radio" name="q3" value="b" id="q3b"> Vale<br>
+              
+              <br>
+              <h3>4. Milline atribuut määrab elemendi virna järjekorra?</h3>
+              <input type="radio" name="q4" value="a" id="q4a"> value:<br>
+              <input type="radio" name="q4" value="b" id="q4b"> position:<br>
+              <input type="radio" name="q4" value="c" id="q4c"> z-index:<br>
+              <input type="radio" name="q4" value="d" id="q4d"> order:<br>
+
+              <br>
+              <input type="submit" value="Kinnita vastused">
+            </form>
+          </section>
+        </div>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(35, 110, 133);"></div>
+        <h1>Tagasiside</h1>
+        <div class="content">
+          <header>
+            <p>Saada meile <strong>tagasisidet</strong> kursuse kohta!</p>
+          </header><br>
+          <section>
+            <div id="results3"></div>
+            <textarea class="feedback" rows="10" cols="60" placeholder="NB! See tagasiside ei lähe kuskile kuna meil pole back-endi."></textarea><br><br>
+            <input type="submit" value="Saada">
+          </section>
+        </div>
+      </div>
+      <div class="content-category">
+        <div class="content-decoration" style="background-color: rgb(226, 226, 226);"></div>
+        <h1 style="color: gray; font-weight:300; font-size: 14px">Koostajad: Saamo Kurvits, Mihkel Keso</h1>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
